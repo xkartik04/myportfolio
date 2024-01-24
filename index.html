@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="index.css">
+
+<link rel="icon" href="logo2.jpg" type="image/x-icon">
+
+<script type="text/javascript" src="js/script.js " ></script>
+
+    <title>PortFolio</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class="ri-home-office-fill"></i><span>xkartk05</span></a>
+
+
+        <ul class="navbar">
+
+            <li> <a href="#" class="active">Home</a></li>
+            <li> <a href="#">About us</a></li>
+            <!-- <li> <a href="#">Service</a></li> -->
+            <!-- <li> <a href="#" >Blog</a></li> -->
+            <li> <a href="#">Contact</a></li>
+
+        </ul>
+
+
+        <div class="main">
+            <a href="#" class="user" > <i class="ri-shield-user-fill"></i>Sign in</a>
+            <!-- <a href="#" >Rigister</a> -->
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+
+    </header>
+
+    <div class="hye-guys">
+        <div class="div">
+        <div>Hey Guys !!! </div>
+           <div> This is Kartik Sahani </div>
+           <div> I am  <span>   </span> Developer|</div> 
+        </div>
+        <div class="img">
+            <img src="2.png" alt="reload">
+        </div>
+    </div>
+
+    <div class="main-container" bac>
+        <div class="about-me">
+            <p>ABOUT ME</p>
+        </div>
+
+        <div class="sub-container2">
+    <img src="kartik3.jpg" alt="reload">
+        </div>
+
+        <div class="sub-container1">
+<p>HEY GUYS !! <br> THIS Is <span>KARTIK KUMAR SAHANI</span>.
+     I AM 20. <br> I STARTED MY CODING JOURNEY BY
+    LEARNING BASIC C/C++ LANGUAGE.   Now I
+    AM IN MY JOURNEY OF   <span>ANDROID DEVELOPER</span>.
+    </p>
+    <p class="dd" >I am always staying updated with the latest trends in Android development and continuously seeking ways to improve my skills. <br> <br> I believe that my technical expertise, combined with my passion for innovation, would make me a valuable addition to your team.</p>
+        </div>
+
+        <div class="icon2">
+             <a href="#">
+                <i class="ri-instagram-fill" style=" color: rgb(249, 111, 111); font-size: 1.8rem;"></i>
+             </a>
+             <a href="#">
+                <i class="ri-facebook-circle-fill" style=" color: rgb(0, 64, 255); font-size: 1.8rem;"></i>
+             </a>
+             <a href="#">
+                <i class="ri-linkedin-box-fill" style=" color: rgb(151, 187, 255); font-size: 1.8rem;"></i>
+             </a>
+             <a href="#">
+                <i class="ri-github-fill" style=" color: rgb(111, 249, 145); font-size: 1.8rem;"></i>
+             </a>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="feedback">
+        
+        <form method="post" name="google-sheet">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="First-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="Last-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contact">Contact</label>
+                <input type="tel" id="contact" name="Contact" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Write Message</label>
+                <textarea id="message" name="Message" rows="4" required></textarea>
+            </div>
+
+            <input type="submit" class="btn" name="Submit">
+        </form>
+
+    </div>
+
+    <div class="to-connect">
+
+<div class="our-service">
+    <div class="service1">
+    <h3>EXPLORE</h3>
+</div>
+
+<div class="service2">
+    <div class="kk">
+         <a href="#" class="our">Work</a>
+         <a href="#" class="our">Skills</a>
+    </div>
+   <div class="kk">
+    <a href="#" class="our">Connect</a>
+      <a href="#" class="our">Instagram</a>
+     <a href="https://www.linkedin.com/in/kartiksahani" target="_blank" class="our">LinkedIn</a>
+   </div>
+
+    </div>
+  
+</div>
+</div>
+<script>
+    const scriptURL =
+        'https://script.google.com/macros/s/AKfycbz8u0NNA197-bwfgs5Typ6PbyUctcmD2ysR2zCm6dNtoy6c2OTAvhA1t7obPK_RsTLZ/exec'
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+
+        fetch(scriptURL, { method: 'post', body: new FormData(form) })
+            .then(response => alert("Thanks for Contacting us..! We Will Contact YouSoon..."))
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
