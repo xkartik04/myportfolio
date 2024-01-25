@@ -179,6 +179,7 @@
      .navbar.open {
          right: 2%;
      }
+     
  }
 
  @media (max-width: 450px){
@@ -360,16 +361,16 @@ background-color:#FFF0E5;
 
  @media (max-width: 1090px) {
      .main-container {
-         margin-top: 34vw;
+         margin-top: 28vw;
          width: 90%;
-         min-height: 85vh;
+         min-height: 80vh;
          margin-left: 5vw;
      }
 
      .about-me {
          width: 29%;
-         margin-top: -7vw;
-         margin-bottom: -7vw;
+         margin-top: 1vw;
+         margin-bottom: 1vw;
          font-size: .9rem;
      }
 
@@ -388,9 +389,11 @@ background-color:#FFF0E5;
         align-items: center;
         text-align: center;
      }
-
+     .sub-container2 {
+        width: 75%;
+     }
      .sub-container2 img{
-        width: 65%;
+        width: 75%;
          
         border-radius: 10%;
      }
