@@ -181,6 +181,13 @@
      }
  }
 
+ @media (max-width: 450px){
+    .navbar a{
+        font-size: .8rem;
+    }
+
+ }
+
 
  .hye-guys{
      display: flex;
@@ -217,6 +224,10 @@ background-color:#FFF0E5;
    .img{
         display: none;
     }   
+    
+}
+
+@media (max-width: 450px){
     
 }
 
@@ -388,8 +399,32 @@ background-color:#FFF0E5;
          width: 50%;
          font-size: 1.4rem;
      }
+
  }
 
+ 
+@media (max-width: 450px){
+    .about-me {
+        margin-top: .1vw;
+        margin-bottom: 5vw;
+    }
+    .sub-container1{
+      
+        font-size: 3.1vw;
+    }
+    .dd {
+        font-size: .7rem;
+    }
+    .icon2{
+        margin-top: 1vw;
+width: 50%;
+margin-bottom: 2vw;
+    }
+
+    .icon2 a i{
+        font-size: 1.2rem;
+    }
+}
 
 
  .feedback {
@@ -451,6 +486,22 @@ background-color:#FFF0E5;
         width: 20%;
     }
 }
+@media (max-width: 450px){
+    .feedback {
+        width: 94%;
+        font-size: 3.6vw;
+    }
+    
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 4px;
+}
+
+.btn{
+    padding: 8px;
+}
+
+}
 
 .to-connect{
     min-height: 24vh;
@@ -498,4 +549,9 @@ background-color:#FFF0E5;
     transform: translateX(30%);
     transition: all .40s ease-in ;
     border-bottom: #000000 1px solid;
+}
+
+@media (max-width: 450px){
+
+    
 }
